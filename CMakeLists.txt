@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.22)
+project(snake)
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+find_package(raylib ${RAYLIB_VERSION} QUIET)
+add_executable(${PROJECT_NAME} main.cc)
+target_link_libraries(${PROJECT_NAME} raylib)
